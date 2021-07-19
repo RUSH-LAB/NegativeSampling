@@ -1,0 +1,31 @@
+RangePow = 6,18
+K = 2,6
+L = 20,400
+Sparsity = 1,0.05,1,1
+
+Batchsize=1024
+Rehash=6400
+Rebuild=128000
+InputDim=135909
+totRecords=490449
+totRecordsTest=153025
+
+Lr=0.0001
+Epoch=30
+Stepsize=1000
+
+sizesOfLayers=128,670091
+numLayer=2
+
+trainData=../dataset/amazon_train.txt
+testData=../dataset/amazon_test.txt
+
+weight=../savedWeight.npz
+savedweight=../savedWeight.npz
+
+logFile=../logs/log_amazon.txt
+
+# 0: off
+# 1: bfloat16 activation + float32 master weights
+# 2: bfloat16 activation and weights
+Bfloat16Opt=0
